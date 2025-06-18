@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="com.mycompany.clientesemaforo.GameController">
+
+    <top>
+        <Label fx:id="lblEstado" text="É A TUA VEZ!" style="-fx-font-size: 24px; -fx-font-weight: bold;" alignment="CENTER" BorderPane.alignment="CENTER" />
+    </top>
+
+    <center>
+        <GridPane fx:id="grid" hgap="5" vgap="5" alignment="CENTER">
+            <padding>
+                <Insets top="20" bottom="20" left="20" right="20"/>
+            </padding>
+            <!-- As células serão adicionadas via código -->
+        </GridPane>
+    </center>
+
+    <right>
+        <VBox spacing="10" alignment="TOP_LEFT" BorderPane.alignment="CENTER">
+            <Label text="Peças:" style="-fx-font-weight: bold; -fx-font-size: 16px;" />
+            <Label fx:id="lblVerdes" text="Peças Verdes: 8" />
+            <Label fx:id="lblAmarelas" text="Peças Amarelas: 8" />
+            <Label fx:id="lblVermelhas" text="Peças Vermelhas: 8" />
+        </VBox>
+    </right>
+
+    <bottom>
+        <HBox spacing="20" alignment="CENTER">
+            <padding>
+                <Insets top="20" bottom="20" left="20" right="20"/>
+            </padding>
+            <Button fx:id="btnRecomecar" text="RECOMEÇAR" onAction="#recomecar"
+                    style="-fx-background-color: #58d68d; -fx-font-weight: bold; -fx-text-fill: white; -fx-border-color: black; -fx-border-width: 2;" />
+            <Button fx:id="btnSair" text="SAIR" onAction="#sair"
+                    style="-fx-background-color: #e74c3c; -fx-font-weight: bold; -fx-text-fill: white; -fx-border-color: black; -fx-border-width: 2;" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
