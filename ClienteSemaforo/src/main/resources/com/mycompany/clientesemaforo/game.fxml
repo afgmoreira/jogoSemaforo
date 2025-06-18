@@ -23,18 +23,11 @@
             </padding>
          <columnConstraints>
             <ColumnConstraints />
+            <ColumnConstraints />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints />
          </rowConstraints>
-         <children>
-              <VBox alignment="CENTER_LEFT" spacing="10">
-                  <Label style="-fx-font-weight: bold; -fx-font-size: 16px;" text="Peças:" />
-                  <Label fx:id="lblVerdes" text="Peças Verdes: 8" />
-                  <Label fx:id="lblAmarelas" text="Peças Amarelas: 8" />
-                  <Label fx:id="lblVermelhas" text="Peças Vermelhas: 8" />
-              </VBox>
-         </children>
             <!-- As células serão adicionadas via código -->
         </GridPane>
     </center>
@@ -48,5 +41,13 @@
             <Button fx:id="btnSair" onAction="#sair" style="-fx-background-color: #e74c3c; -fx-font-weight: bold; -fx-text-fill: white; -fx-border-color: black; -fx-border-width: 2;" text="SAIR" />
         </HBox>
     </bottom>
+   <right>
+        <VBox alignment="CENTER_LEFT" spacing="10" BorderPane.alignment="CENTER">
+            <Label style="-fx-font-weight: bold; -fx-font-size: 16px;" text="Peças:" />
+            <Label fx:id="lblVerdes" text="Peças Verdes: 8" />
+            <Label fx:id="lblAmarelas" text="Peças Amarelas: 8" />
+            <Label fx:id="lblVermelhas" text="Peças Vermelhas: 8" />
+        </VBox>
+   </right>
 
 </BorderPane>
