@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mycompany.clientesemaforo.ConnectionController">
+
+    <top>
+        <VBox alignment="CENTER" spacing="5">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20" />
+            </padding>
+            <Label text="JOGO SEMÁFORO" style="-fx-font-size: 28px; -fx-font-weight: bold;" />
+            <Label text="CONEXÃO" style="-fx-font-size: 20px; -fx-text-fill: goldenrod;" />
+        </VBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="15">
+            <HBox alignment="CENTER" spacing="20">
+                <VBox alignment="CENTER">
+                    <Label text="Inserir IP" style="-fx-font-weight: bold;" />
+                    <TextField fx:id="txtIp" promptText="IP" />
+                </VBox>
+
+                <VBox alignment="CENTER">
+                    <Label text="Inserir Porta" style="-fx-font-weight: bold;" />
+                    <TextField fx:id="txtPorta" promptText="PORTA" />
+                </VBox>
+            </HBox>
+
+            <VBox alignment="CENTER">
+                <Label text="Inserir Nome" style="-fx-font-weight: bold;" />
+                <TextField fx:id="txtNome" promptText="Jogador" />
+            </VBox>
+
+            <Button fx:id="btnConectar" text="CONECTAR" onAction="#conectar"
+                    style="-fx-background-color: #fcd440; -fx-text-fill: black; -fx-font-weight: bold; -fx-padding: 10 20; -fx-border-color: black; -fx-border-width: 2;" />
+        </VBox>
+    </center>
+
+    <padding>
+        <Insets top="30" bottom="30" left="50" right="50"/>
+    </padding>
+</BorderPane>
