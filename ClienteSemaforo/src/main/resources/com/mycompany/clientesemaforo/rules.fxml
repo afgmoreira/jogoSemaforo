@@ -5,20 +5,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" spacing="7" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clientesemaforo.RulesController">
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clientesemaforo.RulesController">
 
     <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="REGRAS DO JOGO" />
-     <Text style="-fx-font-size: 16px;" text="• 2 jogadores, jogam alternadamente" wrappingWidth="850.1640014648438">
-            • 2 jogadores, jogam alternadamente
-            • O jogo realiza-se no seguinte tabuleiro, inicialmente vazio. Em cada jogada, cada jogador realiza uma das seguintes ações:{"\n"}
-            {"      "}• Coloca uma peça verde num quadrado vazio{"\n"}
-            {"      "}• Substitui uma peça verde por uma peça amarela{"\n"}
-            {"      "}• Substitui uma peça amarela por uma peça vermelha
-        </Text>
-   <Text style="-fx-font-size: 16px;" text="• O jogo realiza-se no seguinte tabuleiro, inicialmente vazio. Em cada jogada, o jogador realiza uma das seguintes ações:  " wrappingWidth="854.265625" />
-   <Text style="-fx-font-size: 16px;" text="     • Coloca uma peça verde num quadrado vazio;" wrappingWidth="850.1640014648438" />
-   <Text style="-fx-font-size: 16px;" text="     • Substitui uma peça verde por uma peça amarela;" wrappingWidth="850.1640014648438" />
-   <Text style="-fx-font-size: 16px;" text="     • Substitui uma peça amarela por uma peça vermelha;" wrappingWidth="850.1640014648438" />
+   <Text style="-fx-font-size: 16px;" text="• O jogo realiza-se no seguinte tabuleiro, inicialmente vazio. " textAlignment="CENTER" wrappingWidth="854.265625" />
+   <Text style="-fx-font-size: 16px;" text="• Em cada jogada, o jogador realiza uma das seguintes ações:  " textAlignment="CENTER" wrappingWidth="854.265625" />
+   <Text style="-fx-font-size: 16px;" text="     • Coloca uma peça verde num quadrado vazio;" textAlignment="CENTER" wrappingWidth="850.1640014648438" />
+   <Text style="-fx-font-size: 16px;" text="     • Substitui uma peça verde por uma peça amarela;" textAlignment="CENTER" wrappingWidth="850.1640014648438" />
+   <Text style="-fx-font-size: 16px;" text="     • Substitui uma peça amarela por uma peça vermelha;" textAlignment="CENTER" wrappingWidth="850.1640014648438" />
 
     <Button fx:id="prontoButton" onAction="#switchToPrimary" style="-fx-background-color: #fcd440; -fx-text-fill: black; -fx-font-weight: bold; -fx-padding: 10 20; -fx-border-color: black; -fx-border-width: 2;" text="PRONTO" />
 </VBox>
