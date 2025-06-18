@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.control.*?>
 <?import javafx.geometry.Insets?>
-<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171"
-            fx:controller="com.mycompany.clientesemaforo.GameController">
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clientesemaforo.GameController">
 
     <top>
-        <Label fx:id="lblEstado" text="É A TUA VEZ!" style="-fx-font-size: 24px; -fx-font-weight: bold;" alignment="CENTER" BorderPane.alignment="CENTER" />
+        <Label fx:id="lblEstado" alignment="CENTER" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="É A TUA VEZ!" BorderPane.alignment="CENTER" />
     </top>
 
     <center>
-        <GridPane fx:id="grid" hgap="5" vgap="5" alignment="CENTER">
+        <GridPane fx:id="grid" alignment="CENTER" hgap="5" vgap="5">
             <padding>
-                <Insets top="20" bottom="20" left="20" right="20"/>
+                <Insets bottom="20" left="20" right="20" top="20" />
             </padding>
             <!-- As células serão adicionadas via código -->
         </GridPane>
     </center>
 
     <right>
-        <VBox spacing="10" alignment="TOP_LEFT" BorderPane.alignment="CENTER">
-            <Label text="Peças:" style="-fx-font-weight: bold; -fx-font-size: 16px;" />
+        <VBox alignment="CENTER_LEFT" spacing="10" BorderPane.alignment="CENTER">
+            <Label style="-fx-font-weight: bold; -fx-font-size: 16px;" text="Peças:" />
             <Label fx:id="lblVerdes" text="Peças Verdes: 8" />
             <Label fx:id="lblAmarelas" text="Peças Amarelas: 8" />
             <Label fx:id="lblVermelhas" text="Peças Vermelhas: 8" />
@@ -31,14 +33,12 @@
     </right>
 
     <bottom>
-        <HBox spacing="20" alignment="CENTER">
+        <HBox alignment="CENTER" spacing="20">
             <padding>
-                <Insets top="20" bottom="20" left="20" right="20"/>
+                <Insets bottom="20" left="20" right="20" top="20" />
             </padding>
-            <Button fx:id="btnRecomecar" text="RECOMEÇAR" onAction="#recomecar"
-                    style="-fx-background-color: #58d68d; -fx-font-weight: bold; -fx-text-fill: white; -fx-border-color: black; -fx-border-width: 2;" />
-            <Button fx:id="btnSair" text="SAIR" onAction="#sair"
-                    style="-fx-background-color: #e74c3c; -fx-font-weight: bold; -fx-text-fill: white; -fx-border-color: black; -fx-border-width: 2;" />
+            <Button fx:id="btnRecomecar" onAction="#recomecar" style="-fx-background-color: #58d68d; -fx-font-weight: bold; -fx-text-fill: white; -fx-border-color: black; -fx-border-width: 2;" text="RECOMEÇAR" />
+            <Button fx:id="btnSair" onAction="#sair" style="-fx-background-color: #e74c3c; -fx-font-weight: bold; -fx-text-fill: white; -fx-border-color: black; -fx-border-width: 2;" text="SAIR" />
         </HBox>
     </bottom>
 
