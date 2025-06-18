@@ -18,7 +18,7 @@ import javafx.scene.control.Button;
  * 
  * Após ambos os jogadores estarem prontos, este controlador muda para o ecrã do tabuleiro (game.fxml).
  * 
- * @author Grupo 07
+ * @author Grupo 08
  * @version 1.0
  * @since 2025-06-16
  */
