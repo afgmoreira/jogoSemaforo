@@ -23,7 +23,7 @@ import java.net.Socket;
  * Permite jogar alternadamente, exibe o estado do jogo, processa jogadas
  * e controla reinícios ou saídas.
  * 
- * @author Grupo 08
+ * @author Grupo 07
  * @version 1.0
  * @since 2025-06-16
  */

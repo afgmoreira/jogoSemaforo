@@ -16,7 +16,7 @@ import javafx.scene.control.Alert;
  * Responsável por recolher os dados de IP, Porta e Nome do jogador,
  * estabelecer a ligação ao servidor e encaminhar para o ecrã de regras.
  *
- * @author Grupo 08
+ * @author Grupo 07
  * @version 1.0
  * @since 2025-06-16
  */
